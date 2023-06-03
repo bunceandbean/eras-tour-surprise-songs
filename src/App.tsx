@@ -7,8 +7,6 @@ import { Card } from 'primereact/card';
 import { TrackFrame } from './components/TrackFrame';
 import { Album, constructAlbum } from './types/Album';
 import { debut, fearless, speakNow, red, nine, reputation, lover, folklore, evermore, midnights } from './data/tracklists';
-import { albumSearch } from './util/albumSearch'
-import { Track } from './types/Track';
 
 function App() {
 
@@ -25,13 +23,13 @@ function App() {
 
   const surpriseSongs = [
     {
-      title: 'Welcome to New York',
-      venue: 'NJ-3',
+      title: 'I Wish You Would',
+      venue: 'IL-1',
       isPlayed: true
     },
     {
-      title: 'Clean',
-      venue: 'NJ-3',
+      title: 'the lakes',
+      venue: 'IL-1',
       isPlayed: true
     }
   ] 
@@ -116,7 +114,11 @@ function App() {
         </div>
 
     </div>
-      <footer>Made by <a href="https://github.com/bunceandbean" style={{color:"inherit"}}>bunceandbean</a></footer>
+      <footer>
+        Made by <a href="https://github.com/bunceandbean" style={{color:"inherit"}}>bunceandbean</a>
+        <br />
+        Beta v1.0
+      </footer>
   </>
   );
 }

@@ -460,8 +460,8 @@ export const nine: Track[] = [{
   },
   {
     title: 'I Wish You Would',
-    venue: '',
-    isPlayed: false
+    venue: 'IL-1',
+    isPlayed: true
   },
   {
     title: 'Bad Blood',
@@ -761,8 +761,8 @@ export const folklore: Track[] = [{
   },
   {
     title: 'the lakes',
-    venue: '',
-    isPlayed: false
+    venue: 'IL-1',
+    isPlayed: true
   },
 ]
 
@@ -854,7 +854,7 @@ export const evermore: Track[] = [{
 ]
 
 export const midnights: Track[] = [{
-    title: 'Lavendar Haze',
+    title: 'Lavender Haze',
     venue: 'SETLIST',
     isPlayed: true
   },
