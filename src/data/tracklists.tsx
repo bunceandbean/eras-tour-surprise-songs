@@ -42,8 +42,8 @@ export const debut: Track[] = [{
   },
   {
     title: 'Should\'ve Said No',
-    venue: '?',
-    isPlayed: false
+    venue: 'MA-1',
+    isPlayed: true
   },
   {
     title: 'Mary\'s Song',
