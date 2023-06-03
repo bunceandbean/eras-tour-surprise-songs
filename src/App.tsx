@@ -39,7 +39,7 @@ function App() {
   const genHeader = () => (
     <div className=''>
       <h1 style={{fontFamily: "era", textAlign: "center"}}>TAYLOR SWIFT: THE ERAS TOUR</h1>
-      <h1 style={{fontFamily: "era", textAlign: "center"}}>Suprise Song Tracker</h1>
+      <h1 style={{fontFamily: "era", textAlign: "center"}}>Surprise Song Tracker</h1>
     </ div>
   );
 
@@ -116,6 +116,7 @@ function App() {
         </div>
 
     </div>
+      <footer>Made by <a href="https://github.com/bunceandbean" style={{color:"inherit"}}>bunceandbean</a></footer>
   </>
   );
 }

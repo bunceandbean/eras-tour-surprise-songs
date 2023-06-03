@@ -8,10 +8,10 @@
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.5.2",
     "@types/node": "^16.18.34",
-    "@types/react": "^18.2.7",
+    "@types/react": "^18.2.8",
     "@types/react-dom": "^18.2.4",
     "lodash": "^4.17.21",
-    "primeflex": "^3.3.0",
+    "primeflex": "^3.3.1",
     "primeicons": "^6.0.1",
     "primereact": "^9.5.0",
     "react": "^18.2.0",
@@ -45,7 +45,7 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^8.41.0",
+    "eslint": "^8.42.0",
     "eslint-plugin-react": "^7.32.2"
   }
 }

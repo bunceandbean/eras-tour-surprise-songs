@@ -178,6 +178,16 @@ body {
   margin-bottom: 1rem;
 }
 
+footer {
+  margin-top: auto;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-family: "folklore";
+}
+
 @font-face {
   font-family: 'Debut';
   src: local('Debut'), url(./fonts/Debut.ttf) format('truetype');
