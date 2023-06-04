@@ -1,6 +1,7 @@
 import { Track } from '../types/Track'
+import { Setlist } from '../types/Setlist'
 
-export const debut: Track[] = [{
+const debut: Track[] = [{
     title: 'Tim McGraw',
     venue: 'AZ-1',
     isPlayed: true
@@ -72,7 +73,7 @@ export const debut: Track[] = [{
   }
 ]
 
-export const fearless: Track[] = [{
+const fearless: Track[] = [{
     title: 'Fearless',
     venue: 'SETLIST',
     isPlayed: true
@@ -169,8 +170,8 @@ export const fearless: Track[] = [{
   },
   {
     title: 'You All Over Me',
-    venue: '?',
-    isPlayed: false
+    venue: 'CH-2',
+    isPlayed: true
   },
   {
     title: 'Mr. Perfectly Fine',
@@ -199,13 +200,13 @@ export const fearless: Track[] = [{
   },
 ]
 
-export const speakNow: Track[] = [{
+const speakNow: Track[] = [{
     title: 'Mine',
     venue: 'TN-3',
     isPlayed: true
   },
   {
-    title: 'Spark\'s Fly',
+    title: 'Sparks Fly',
     venue: 'TN-1',
     isPlayed: true
   },
@@ -286,7 +287,7 @@ export const speakNow: Track[] = [{
   },
 ]
 
-export const red: Track[] = [{
+const red: Track[] = [{
     title: 'State of Grace',
     venue: 'AZ-2',
     isPlayed: true
@@ -428,7 +429,7 @@ export const red: Track[] = [{
   },
 ]
 
-export const nine: Track[] = [{
+const nine: Track[] = [{
     title: 'Welcome to New York',
     venue: 'NJ-3',
     isPlayed: true
@@ -510,7 +511,7 @@ export const nine: Track[] = [{
   },
 ]
 
-export const reputation: Track[] = [{
+const reputation: Track[] = [{
     title: '...Ready for It?',
     venue: 'SETLIST',
     isPlayed: true
@@ -587,7 +588,7 @@ export const reputation: Track[] = [{
   },
 ]
 
-export const lover: Track[] = [{
+const lover: Track[] = [{
     title: 'I Forgot That You Existed',
     venue: '',
     isPlayed: false
@@ -679,7 +680,7 @@ export const lover: Track[] = [{
   },
 ]
 
-export const folklore: Track[] = [{
+const folklore: Track[] = [{
     title: 'the 1',
     venue: 'SETLIST',
     isPlayed: true
@@ -766,7 +767,7 @@ export const folklore: Track[] = [{
   },
 ]
 
-export const evermore: Track[] = [{
+const evermore: Track[] = [{
     title: 'willow',
     venue: 'SETLIST',
     isPlayed: true
@@ -853,7 +854,7 @@ export const evermore: Track[] = [{
   },
 ]
 
-export const midnights: Track[] = [{
+const midnights: Track[] = [{
     title: 'Lavender Haze',
     venue: 'SETLIST',
     isPlayed: true
@@ -964,3 +965,32 @@ export const midnights: Track[] = [{
     isPlayed: false
   },
 ]
+
+export const surpriseSongs: Track[] = [
+  {
+    title: 'You All Over Me',
+    venue: 'IL-2',
+    isPlayed: true
+  },
+  {
+    title: 'I Don\'t Wanna Live Forever',
+    venue: 'IL-2',
+    isPlayed: true
+  }
+] 
+
+export const setlist: Setlist= {
+  "debut": debut,
+  "fearless": fearless,
+  "speakNow": speakNow,
+  "red": red,
+  "1989": nine,
+  "reputation": reputation,
+  "lover": lover, 
+  "folklore": folklore,
+  "evermore": evermore,
+  "midnights": midnights,
+}
+
+// Used for API conversion
+console.log(JSON.stringify(setlist));
