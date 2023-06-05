@@ -25,6 +25,7 @@ function App() {
     "folklore": "#D3D3D3",
     "evermore": "#C4A484",
     "midnights": "#acace6",
+    "misc": "#013220"
   }
 
 
@@ -154,17 +155,22 @@ function App() {
               <DataView value={setlist.folklore} itemTemplate={TrackFrame} />
             </Card>
             <br />
-            <Card  style = {{backgroundColor: colorData.folklore}}>
-              {/* <Chart type="pie" data={chartData} options={chartOptions} className="w-full md:w-30rem" /> */}
-              <h1 style={{fontFamily: "Midnights", textAlign: "center"}}> Analytics coming soon!</h1>
-            </Card>
+            <Card style = {{backgroundColor: colorData.misc}}>
+              <h1 style={{fontFamily: "", textAlign: "center", color: "white"}}>Miscellaneous</h1>
+              <DataView className="bg-purple-600" value={setlist.misc} itemTemplate={TrackFrame} />
+          </Card>
+          <br/>
+          <Card style = {{backgroundColor: colorData.folklore}}>
+                {/* <Chart type="pie" data={chartData} options={chartOptions} className="w-full md:w-30rem" /> */}
+                <h1 style={{fontFamily: "Midnights", textAlign: "center"}}> Analytics coming soon!</h1>
+          </Card>
         </div>
 
     </div>
       <footer>
         Made by <a href="https://github.com/bunceandbean" style={{color:"inherit"}}>bunceandbean</a>
         <br />
-        Beta v2.0
+        Beta v2.1
       </footer>
   </>
   );

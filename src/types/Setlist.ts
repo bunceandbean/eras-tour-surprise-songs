@@ -11,4 +11,5 @@ export interface Setlist {
     "folklore": Track[],
     "evermore": Track[],
     "midnights": Track[],
+    "misc": Track[]
 }
