@@ -120,8 +120,10 @@ function App() {
     </div>
     <br />
     <div className="grid">
-      <MultiSelect value={selectedAlbums} onChange={(e) => filterAlbums(e.value)} options={albumsToSelect} optionLabel="name" 
-        placeholder="Select Album(s)" className="w-full" />
+      <div className='col md:col-12'>
+        <MultiSelect value={selectedAlbums} onChange={(e) => filterAlbums(e.value)} options={albumsToSelect} optionLabel="name" 
+          placeholder="Select Album(s)" className="w-full" />
+        </div>
     </div>
     <br />
     <div className="grid">
