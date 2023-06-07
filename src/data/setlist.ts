@@ -369,8 +369,8 @@ const red: Track[] = [{
   },
   {
     title: 'The Moment I Knew',
-    venue: '?',
-    isPlayed: false
+    venue: 'IL-3',
+    isPlayed: true
   },
   {
     title: 'Come Back... Be Here',
@@ -956,8 +956,8 @@ const midnights: Track[] = [{
   },
   {
     title: 'Hits Different',
-    venue: '',
-    isPlayed: false
+    venue: 'IL-3',
+    isPlayed: true
   },
   {
     title: 'You\'re Losing Me',
@@ -966,15 +966,21 @@ const midnights: Track[] = [{
   },
 ]
 
+const misc: Track[] = [{
+  title: 'You All Over Me',
+  venue: 'IL-2',
+  isPlayed: true
+}]
+
 export const surpriseSongs: Track[] = [
   {
-    title: 'You All Over Me',
-    venue: 'IL-2',
+    title: 'Hits Different',
+    venue: 'IL-3',
     isPlayed: true
   },
   {
-    title: 'I Don\'t Wanna Live Forever',
-    venue: 'IL-2',
+    title: 'The Moment I Knew',
+    venue: 'IL-3',
     isPlayed: true
   }
 ] 

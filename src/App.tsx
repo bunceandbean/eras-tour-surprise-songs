@@ -26,6 +26,7 @@ function App() {
     "folklore": "#D3D3D3",
     "evermore": "#C4A484",
     "midnights": "#acace6",
+    "misc": "#013220"
   }
 
 
@@ -161,7 +162,7 @@ function App() {
       <footer>
         Made by <a href="https://github.com/bunceandbean" style={{color:"inherit"}}>bunceandbean</a>
         <br />
-        Beta v2.0
+        Beta v2.1
       </footer>
   </>
   );
