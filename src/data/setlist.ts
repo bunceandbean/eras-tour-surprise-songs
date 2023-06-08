@@ -1002,6 +1002,7 @@ export const setlist: {[key in Albums]: SetlistData}= {
   "debut": {
     albumName: 'Taylor Swift',
     columnNumber: 1,
+    albumNumber: 1,
     setList: debut,
     colorData: "#adffc2",
     headerCssStyle: {
@@ -1012,6 +1013,7 @@ export const setlist: {[key in Albums]: SetlistData}= {
   "fearless": {
     albumName: 'Fearless',
     columnNumber: 2,
+    albumNumber: 2,
     setList: fearless,
     colorData: '#fff3ad',
     headerCssStyle: {
@@ -1022,6 +1024,7 @@ export const setlist: {[key in Albums]: SetlistData}= {
   "speakNow": {
     albumName: 'Speak Now',
     columnNumber: 1,
+    albumNumber: 3,
     setList: speakNow,
     colorData: 'plum',
     headerCssStyle: {
@@ -1032,6 +1035,7 @@ export const setlist: {[key in Albums]: SetlistData}= {
   "red": {
     albumName: 'Red',
     columnNumber: 2,
+    albumNumber: 4,
     setList: red,
     colorData: '#FF6666',
     headerCssStyle: {
@@ -1042,6 +1046,7 @@ export const setlist: {[key in Albums]: SetlistData}= {
   "1989": {
     albumName: '1989',
     columnNumber: 1,
+    albumNumber: 5,
     setList: nine,
     colorData: 'lightblue',
     headerCssStyle: {
@@ -1052,6 +1057,7 @@ export const setlist: {[key in Albums]: SetlistData}= {
   "reputation": {
     albumName: 'Reputation',
     columnNumber: 2,
+    albumNumber: 6,
     setList: reputation,
     colorData: '#818589',
     headerCssStyle: {
@@ -1063,6 +1069,7 @@ export const setlist: {[key in Albums]: SetlistData}= {
   "lover": {
     albumName: 'Lover',
     columnNumber: 1,
+    albumNumber: 7,
     setList: lover,
     colorData: 'lightpink',
     headerCssStyle: {
@@ -1073,6 +1080,7 @@ export const setlist: {[key in Albums]: SetlistData}= {
   "folklore": {
     albumName: 'Folklore',
     columnNumber: 2,
+    albumNumber: 8,
     setList: folklore,
     colorData: '#D3D3D3',
     headerCssStyle: {
@@ -1083,6 +1091,7 @@ export const setlist: {[key in Albums]: SetlistData}= {
   "evermore": {
     albumName: 'Evermore',
     columnNumber: 1,
+    albumNumber: 9,
     setList: evermore,
     colorData: '#C4A484',
     headerCssStyle: {
@@ -1093,6 +1102,7 @@ export const setlist: {[key in Albums]: SetlistData}= {
   "midnights": {
     albumName: 'Midnights',
     columnNumber: 1,
+    albumNumber: 10,
     setList: midnights,
     colorData: '#acace6',
     headerCssStyle: {
