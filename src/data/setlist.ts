@@ -1,5 +1,5 @@
 import { Track } from '../types/Track'
-import { Setlist } from '../types/Setlist'
+import { SetlistData } from '../types/Setlist'
 
 const debut: Track[] = [{
     title: 'Tim McGraw',
@@ -985,19 +985,133 @@ export const surpriseSongs: Track[] = [
   }
 ] 
 
-export const setlist: Setlist= {
-  "debut": debut,
-  "fearless": fearless,
-  "speakNow": speakNow,
-  "red": red,
-  "1989": nine,
-  "reputation": reputation,
-  "lover": lover, 
-  "folklore": folklore,
-  "evermore": evermore,
-  "midnights": midnights,
-  "misc": misc,
+export enum Albums {
+  DEBUT = 'debut',
+  FEARLESS = 'fearless',
+  SPEAK_NOW = 'speakNow',
+  RED = 'red',
+  NINETEEN_EIGHT_NINE = '1989',
+  REPUTATION = 'reputation',
+  LOVER = 'lover',
+  FOLKLORE = 'folklore',
+  EVERMORE = 'evermore',
+  MIDNIGHTS = 'midnights'
+}
 
+export const setlist: {[key in Albums]: SetlistData}= {
+  "debut": {
+    albumName: 'Taylor Swift',
+    columnNumber: 1,
+    albumNumber: 1,
+    setList: debut,
+    colorData: "#adffc2",
+    headerCssStyle: {
+      fontFamily: 'Debut',
+      textAlign: "center",
+    },
+  },
+  "fearless": {
+    albumName: 'Fearless',
+    columnNumber: 2,
+    albumNumber: 2,
+    setList: fearless,
+    colorData: '#fff3ad',
+    headerCssStyle: {
+      fontFamily: 'Fearless',
+      textAlign: "center",
+    },
+  },
+  "speakNow": {
+    albumName: 'Speak Now',
+    columnNumber: 1,
+    albumNumber: 3,
+    setList: speakNow,
+    colorData: 'plum',
+    headerCssStyle: {
+      fontFamily: 'Speak-Now',
+      textAlign: "center",
+    },
+  },
+  "red": {
+    albumName: 'Red',
+    columnNumber: 2,
+    albumNumber: 4,
+    setList: red,
+    colorData: '#FF6666',
+    headerCssStyle: {
+      fontFamily: 'Impact, fantasy',
+      textAlign: "center",
+    },
+  },
+  "1989": {
+    albumName: '1989',
+    columnNumber: 1,
+    albumNumber: 5,
+    setList: nine,
+    colorData: 'lightblue',
+    headerCssStyle: {
+      fontFamily: 'nine',
+      textAlign: "center",
+    },
+  },
+  "reputation": {
+    albumName: 'Reputation',
+    columnNumber: 2,
+    albumNumber: 6,
+    setList: reputation,
+    colorData: '#818589',
+    headerCssStyle: {
+      fontFamily: 'reputation',
+      color: "black",
+      textAlign: "center",
+    },
+  },
+  "lover": {
+    albumName: 'Lover',
+    columnNumber: 1,
+    albumNumber: 7,
+    setList: lover,
+    colorData: 'lightpink',
+    headerCssStyle: {
+      fontFamily: 'Lover',
+      textAlign: "center",
+    },
+  }, 
+  "folklore": {
+    albumName: 'Folklore',
+    columnNumber: 2,
+    albumNumber: 8,
+    setList: folklore,
+    colorData: '#D3D3D3',
+    headerCssStyle: {
+      fontFamily: 'folklore',
+      textAlign: "center",
+    },
+  },
+  "evermore": {
+    albumName: 'Evermore',
+    columnNumber: 1,
+    albumNumber: 9,
+    setList: evermore,
+    colorData: '#C4A484',
+    headerCssStyle: {
+      fontFamily: 'folklore',
+      textAlign: "center",
+    },
+  },
+  "midnights": {
+    albumName: 'Midnights',
+    columnNumber: 1,
+    albumNumber: 10,
+    setList: midnights,
+    colorData: '#acace6',
+    headerCssStyle: {
+      fontFamily: 'Neue Haas Grotesk Display Pro',
+      textAlign: "center",
+      color: "",
+    },
+    dataViewClassName: 'bg-purple-600',
+  },
 }
 
 // Used for API conversion

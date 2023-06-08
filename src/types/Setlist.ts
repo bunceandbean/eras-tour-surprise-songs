@@ -1,15 +1,11 @@
 import { Track } from './Track';
 
-export interface Setlist {
-    "debut": Track[],
-    "fearless": Track[],
-    "speakNow": Track[],
-    "red": Track[],
-    "1989": Track[],
-    "reputation": Track[],
-    "lover": Track[], 
-    "folklore": Track[],
-    "evermore": Track[],
-    "midnights": Track[],
-    "misc": Track[]
-}
+export interface SetlistData {
+    albumName: string;
+    columnNumber: number;
+    albumNumber: number;
+    setList: Track[];
+    colorData: string;
+    headerCssStyle: {[key: string]: string};
+    dataViewClassName?: string;
+};
