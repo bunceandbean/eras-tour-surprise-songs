@@ -128,7 +128,7 @@ function App() {
     </div>
     <br />
     <div className="grid">
-      <div className="col md:col-6 fadeinleft animation-duration-500 animation-iteration">
+      <div className="col-12 md:col-6 fadeinleft animation-duration-500 animation-iteration">
         {albumSort(albumsToShow).filter(album => album[1].columnNumber === 1).map((album) => {
           return (
             <>
@@ -142,7 +142,7 @@ function App() {
         })}
         </div>
 
-        <div className="col md:col-6 fadeinright animation-duration-500 animation-iteration">
+        <div className="col-12 md:col-6 fadeinright animation-duration-500 animation-iteration">
         {albumSort(albumsToShow).filter(album => album[1].columnNumber === 2).map((album) => {
           return (
             <>
@@ -162,7 +162,7 @@ function App() {
       <footer>
         Made by <a href="https://github.com/bunceandbean" style={{color:"inherit"}}>bunceandbean</a>
         <br />
-        Beta v2.1
+        Beta v3.0
       </footer>
   </>
   );
