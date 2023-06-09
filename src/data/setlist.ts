@@ -995,7 +995,8 @@ export enum Albums {
   LOVER = 'lover',
   FOLKLORE = 'folklore',
   EVERMORE = 'evermore',
-  MIDNIGHTS = 'midnights'
+  MIDNIGHTS = 'midnights',
+  MISC = 'misc'
 }
 
 export const setlist: {[key in Albums]: SetlistData}= {
@@ -1108,9 +1109,19 @@ export const setlist: {[key in Albums]: SetlistData}= {
     headerCssStyle: {
       fontFamily: 'Neue Haas Grotesk Display Pro',
       textAlign: "center",
-      color: "",
     },
     dataViewClassName: 'bg-purple-600',
+  },
+  "misc": {
+    albumName: 'Miscellaneous',
+    columnNumber: 2,
+    albumNumber: 11,
+    setList: misc,
+    colorData: '#F2D2BD',
+    headerCssStyle: {
+      fontFamily: 'Neue Haas Grotesk Display Pro',
+      textAlign: "center",
+    },
   },
 }
 
