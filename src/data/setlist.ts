@@ -1056,7 +1056,7 @@ export const setlist: {[key in Albums]: SetlistData}= {
     },
   },
   "reputation": {
-    albumName: 'Reputation',
+    albumName: 'reputation',
     columnNumber: 2,
     albumNumber: 6,
     setList: reputation,
@@ -1079,7 +1079,7 @@ export const setlist: {[key in Albums]: SetlistData}= {
     },
   }, 
   "folklore": {
-    albumName: 'Folklore',
+    albumName: 'folklore',
     columnNumber: 2,
     albumNumber: 8,
     setList: folklore,
@@ -1090,7 +1090,7 @@ export const setlist: {[key in Albums]: SetlistData}= {
     },
   },
   "evermore": {
-    albumName: 'Evermore',
+    albumName: 'evermore',
     columnNumber: 1,
     albumNumber: 9,
     setList: evermore,
