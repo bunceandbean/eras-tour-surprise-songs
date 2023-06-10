@@ -102,6 +102,7 @@ function App() {
     <>
       <h1 style={{fontFamily: "era", textAlign: "center"}}>TAYLOR SWIFT: THE ERAS TOUR</h1>
       <h1 style={{fontFamily: "era", textAlign: "center"}}>Surprise Song Tracker</h1>
+      <p style={{fontSize: "16px", textAlign: "center"}}><i>Made by <a href="https://github.com/bunceandbean">bunceandbean</a></i></p>
     </>
   );
 
@@ -115,7 +116,7 @@ function App() {
       <div className="col md:col-4 fadeinright animation-duration-500 animation-iteration">
         <Card className="" title={"Last Played Surprise Songs:"}>
           <DataView value={surpriseSongs} itemTemplate={TrackFrame}></DataView>
-
+          <br></br>
         </Card> 
       </div>
     </div>
