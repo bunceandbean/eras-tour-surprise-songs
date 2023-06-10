@@ -257,8 +257,8 @@ const speakNow: Track[] = [{
   },
   {
     title: 'Haunted',
-    venue: '?',
-    isPlayed: false
+    venue: 'MI-1',
+    isPlayed: true
   },
   {
     title: 'Last Kiss',
@@ -319,8 +319,8 @@ const red: Track[] = [{
   },
   {
     title: 'I Almost Do',
-    venue: '?',
-    isPlayed: false
+    venue: 'MI-1',
+    isPlayed: true
   },
   {
     title: 'We Are Never Ever Getting Back Together',
@@ -974,13 +974,13 @@ const misc: Track[] = [{
 
 export const surpriseSongs: Track[] = [
   {
-    title: 'Hits Different',
-    venue: 'IL-3',
+    title: 'Haunted',
+    venue: 'MI-1',
     isPlayed: true
   },
   {
-    title: 'The Moment I Knew',
-    venue: 'IL-3',
+    title: 'I Almost Do',
+    venue: 'MI-1',
     isPlayed: true
   }
 ] 
