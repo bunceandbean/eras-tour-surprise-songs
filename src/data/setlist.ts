@@ -105,8 +105,8 @@ const fearless: Track[] = [{
   },
   {
     title: 'Breathe',
-    venue: '?',
-    isPlayed: false
+    venue: 'MI-2',
+    isPlayed: true
   },
   {
     title: 'Tell Me Why',
@@ -451,8 +451,8 @@ const nine: Track[] = [{
   },
   {
     title: 'All You Had to Do Was Stay',
-    venue: '',
-    isPlayed: false
+    venue: 'MI-2',
+    isPlayed: true
   },
   {
     title: 'Shake It Off',
@@ -974,13 +974,13 @@ const misc: Track[] = [{
 
 export const surpriseSongs: Track[] = [
   {
-    title: 'Haunted',
-    venue: 'MI-1',
+    title: 'All You Had to Do Was Stay',
+    venue: 'MI-2',
     isPlayed: true
   },
   {
-    title: 'I Almost Do',
-    venue: 'MI-1',
+    title: 'Breathe',
+    venue: 'MI-2',
     isPlayed: true
   }
 ] 
