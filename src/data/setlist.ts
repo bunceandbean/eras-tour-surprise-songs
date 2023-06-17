@@ -175,8 +175,8 @@ const fearless: Track[] = [{
   },
   {
     title: 'Mr. Perfectly Fine',
-    venue: '?',
-    isPlayed: false
+    venue: 'PA-1',
+    isPlayed: true
   },
   {
     title: 'We Were Happy',
@@ -334,8 +334,8 @@ const red: Track[] = [{
   },
   {
     title: 'The Last Time',
-    venue: '?',
-    isPlayed: false
+    venue: 'PA-1',
+    isPlayed: true
   },
   {
     title: 'Holy Ground',
@@ -974,13 +974,13 @@ const misc: Track[] = [{
 
 export const surpriseSongs: Track[] = [
   {
-    title: 'All You Had to Do Was Stay',
-    venue: 'MI-2',
+    title: 'Mr. Perfectly Fine',
+    venue: 'PA-1',
     isPlayed: true
   },
   {
-    title: 'Breathe',
-    venue: 'MI-2',
+    title: 'The Last Time',
+    venue: 'PA-1',
     isPlayed: true
   }
 ] 
