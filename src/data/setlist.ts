@@ -222,8 +222,8 @@ const speakNow: Track[] = [{
   },
   {
     title: 'Dear John',
-    venue: '?',
-    isPlayed: false
+    venue: 'MN-2',
+    isPlayed: true
   },
   {
     title: 'Mean',
@@ -675,8 +675,8 @@ const lover: Track[] = [{
   },
   {
     title: 'Daylight',
-    venue: '',
-    isPlayed: false
+    venue: 'MN-2',
+    isPlayed: true
   },
 ]
 
@@ -974,13 +974,13 @@ const misc: Track[] = [{
 
 export const surpriseSongs: Track[] = [
   {
-    title: 'Paper Rings',
-    venue: 'MN-1',
+    title: 'Dear John',
+    venue: 'MN-2',
     isPlayed: true
   },
   {
-    title: 'If This Was a Movie',
-    venue: 'MN-1',
+    title: 'Daylight',
+    venue: 'MN-2',
     isPlayed: true
   }
 ] 
