@@ -58,8 +58,8 @@ const debut: Track[] = [{
   },
   {
     title: 'I\'m Only Me When I\'m With You',
-    venue: '?',
-    isPlayed: false
+    venue: 'OH-1',
+    isPlayed: true
   },
   {
     title: 'Invisible',
@@ -578,8 +578,8 @@ const reputation: Track[] = [{
   },
   {
     title: 'Call It What You Want',
-    venue: '',
-    isPlayed: false
+    venue: 'OH-2',
+    isPlayed: true
   },
   {
     title: 'New Years Day',
@@ -814,8 +814,8 @@ const evermore: Track[] = [{
   },
   {
     title: 'ivy',
-    venue: '',
-    isPlayed: false
+    venue: 'OH-2',
+    isPlayed: true
   },
   {
     title: 'cowboy like me',
@@ -839,8 +839,8 @@ const evermore: Track[] = [{
   },
   {
     title: 'evermore',
-    venue: '',
-    isPlayed: false
+    venue: 'OH-1',
+    isPlayed: true
   },
   {
     title: 'right where you left me',
@@ -970,12 +970,22 @@ const misc: Track[] = [{
   title: 'I Don\'t Wanna Live Forever',
   venue: 'IL-2',
   isPlayed: true
+},
+{
+  title: 'I miss you, I’m sorry (w/ Gracie Abrams)',
+  venue: 'OH-2',
+  isPlayed: true
 }]
 
 export const surpriseSongs: Track[] = [
   {
-    title: 'Dear John',
-    venue: 'MN-2',
+    title: 'ivy',
+    venue: 'OH-2',
+    isPlayed: true
+  },
+  {
+    title: 'I miss you, I’m sorry (w/ Gracie Abrams)',
+    venue: 'OH-2',
     isPlayed: true
   },
   {
