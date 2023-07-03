@@ -989,8 +989,8 @@ export const surpriseSongs: Track[] = [
     isPlayed: true
   },
   {
-    title: 'Daylight',
-    venue: 'MN-2',
+    title: 'Call It What You Want',
+    venue: 'OH-2',
     isPlayed: true
   }
 ] 
