@@ -237,8 +237,8 @@ const speakNow: Track[] = [{
   },
   {
     title: 'Never Grow Up',
-    venue: '?',
-    isPlayed: false
+    venue: 'MO-1',
+    isPlayed: true
   },
   {
     title: 'Enchanted',
@@ -267,8 +267,8 @@ const speakNow: Track[] = [{
   },
   {
     title: 'Long Live',
-    venue: '?',
-    isPlayed: false
+    venue: 'SETLIST',
+    isPlayed: true
   },
   {
     title: 'Ours',
@@ -282,6 +282,36 @@ const speakNow: Track[] = [{
   },
   {
     title: 'Superman',
+    venue: '?',
+    isPlayed: false
+  },
+  {
+    title: 'Electric Touch',
+    venue: '?',
+    isPlayed: false
+  },
+  {
+    title: 'When Emma Falls in Love',
+    venue: 'MO-1',
+    isPlayed: true
+  },
+  {
+    title: 'I Can See You',
+    venue: '?',
+    isPlayed: false
+  },
+  {
+    title: 'Castles Crumbling',
+    venue: '?',
+    isPlayed: false
+  },
+  {
+    title: 'Foolish One',
+    venue: '?',
+    isPlayed: false
+  },
+  {
+    title: 'Timeless',
     venue: '?',
     isPlayed: false
   },
@@ -979,18 +1009,13 @@ const misc: Track[] = [{
 
 export const surpriseSongs: Track[] = [
   {
-    title: 'ivy',
-    venue: 'OH-2',
+    title: 'Never Grow Up',
+    venue: 'MO-1',
     isPlayed: true
   },
   {
-    title: 'I miss you, I’m sorry (w/ Gracie Abrams)',
-    venue: 'OH-2',
-    isPlayed: true
-  },
-  {
-    title: 'Call It What You Want',
-    venue: 'OH-2',
+    title: 'When Emma Falls in Love',
+    venue: 'MO-1',
     isPlayed: true
   }
 ] 
