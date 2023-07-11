@@ -262,8 +262,8 @@ const speakNow: Track[] = [{
   },
   {
     title: 'Last Kiss',
-    venue: '?',
-    isPlayed: false
+    venue: 'MO-2',
+    isPlayed: true
   },
   {
     title: 'Long Live',
@@ -834,8 +834,8 @@ const evermore: Track[] = [{
   },
   {
     title: 'dorothea',
-    venue: '',
-    isPlayed: false
+    venue: 'MO-2',
+    isPlayed: true
   },
   {
     title: 'coney island',
@@ -1009,13 +1009,13 @@ const misc: Track[] = [{
 
 export const surpriseSongs: Track[] = [
   {
-    title: 'Never Grow Up',
-    venue: 'MO-1',
+    title: 'Last Kiss',
+    venue: 'MO-2',
     isPlayed: true
   },
   {
-    title: 'When Emma Falls in Love',
-    venue: 'MO-1',
+    title: 'dorothea',
+    venue: 'MO-2',
     isPlayed: true
   }
 ] 
