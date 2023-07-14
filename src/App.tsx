@@ -54,6 +54,10 @@ function App() {
   const [chartOptions, setChartOptions] = useState({});
   const [albumsToShow, setAlbumsToShow] = useState<{[key in Albums]: SetlistData}>(setlist);
   const [selectedAlbums, setSelectedAlbums] = useState<string[]>([]);
+  const [hideSetlistSongs, setHideSetlistSongs] = useState<boolean>(false);
+  const [hidePlayedSurprisedSongs, setHidePlayedSurprisedSongs] = useState<boolean>(false);
+  const [hideUnplayedSurprisedSongs, setHideUnplayedSurprisedSongs] = useState<boolean>(false);
+
   const orderedSetlist = albumSort(setlist);
   const albumsToSelect = orderedSetlist.map(album => ({name: album[1].albumName, value: album[0]}));
 
@@ -127,6 +131,32 @@ function App() {
           placeholder="Select Album(s)" className="w-full" />
         </div>
     </div>
+    <div className="grid">
+          <div className="col md:col-4 text-center">
+            <label style={{color: "white"}}>
+              <input type="checkbox" checked={hideSetlistSongs} style={{
+                marginRight: 8
+              }} onChange={() => setHideSetlistSongs(!hideSetlistSongs)} />
+              Hide Setlist Songs
+            </label>
+          </div>
+          <div className="col md:col-4 text-center">
+            <label style={{color: "white"}}>
+              <input type="checkbox" checked={hidePlayedSurprisedSongs} style={{
+                marginRight: 8
+              }} onChange={() => setHidePlayedSurprisedSongs(!hidePlayedSurprisedSongs)} />
+              Hide Played Surprised Songs
+            </label>
+          </div>
+          <div className="col md:col-4 text-center">
+            <label style={{color: "white"}}>
+              <input type="checkbox" checked={hideUnplayedSurprisedSongs} style={{
+                marginRight: 8
+              }} onChange={() => setHideUnplayedSurprisedSongs(!hideUnplayedSurprisedSongs)} />
+              Hide Unplayed Surprised Songs
+            </label>
+          </div>
+        </div>
     <br />
     <div className="grid">
       <div className="col-12 md:col-6 fadeinleft animation-duration-500 animation-iteration">
@@ -135,7 +165,18 @@ function App() {
             <>
               <Card style={{backgroundColor: album[1].colorData}}>
                 <h1 style={album[1].headerCssStyle}>{album[1].albumName}</h1>
-                  <DataView className={album[1].dataViewClassName} value={album[1].setList} itemTemplate={TrackFrame} />
+                  <DataView className={album[1].dataViewClassName} value={album[1].setList.filter(song => {
+                    if (hideSetlistSongs && song.venue === "SETLIST") {
+                      return false;
+                    }
+                    if (hidePlayedSurprisedSongs && song.isPlayed) {
+                      return false;
+                    }
+                    if (hideUnplayedSurprisedSongs && !song.isPlayed && song.venue !== "SETLIST") {
+                      return false;
+                    }
+                    return true;
+                  })} itemTemplate={TrackFrame} />
               </Card>
               <br />
             </>
@@ -145,11 +186,23 @@ function App() {
 
         <div className="col-12 md:col-6 fadeinright animation-duration-500 animation-iteration">
         {albumSort(albumsToShow).filter(album => album[1].columnNumber === 2).map((album) => {
+          // modify album.setList to remove songs based on states
           return (
             <>
               <Card style={{backgroundColor: album[1].colorData}}>
                 <h1 style={album[1].headerCssStyle}>{album[1].albumName}</h1>
-                  <DataView className={album[1].dataViewClassName} value={album[1].setList} itemTemplate={TrackFrame} />
+                  <DataView className={album[1].dataViewClassName} value={album[1].setList.filter(song => {
+                    if (hideSetlistSongs && song.venue === "SETLIST") {
+                      return false;
+                    }
+                    if (hidePlayedSurprisedSongs && song.isPlayed) {
+                      return false;
+                    }
+                    if (hideUnplayedSurprisedSongs && !song.isPlayed && song.venue !== "SETLIST") {
+                      return false;
+                    }
+                    return true;
+                  })} itemTemplate={TrackFrame} />
               </Card>
               <br />
             </>
