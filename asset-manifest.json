@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/eras-tour-surprise-songs/static/css/main.03d17352.css",
-    "main.js": "/eras-tour-surprise-songs/static/js/main.fee2badd.js",
+    "main.js": "/eras-tour-surprise-songs/static/js/main.1690e78f.js",
     "static/js/787.092a5854.chunk.js": "/eras-tour-surprise-songs/static/js/787.092a5854.chunk.js",
     "static/media/primeicons.svg": "/eras-tour-surprise-songs/static/media/primeicons.e1441b135b3ca9ad643c.svg",
     "static/media/folklore.ttf": "/eras-tour-surprise-songs/static/media/folklore.8973882ce809326e9fe3.ttf",
@@ -20,11 +20,11 @@
     "static/media/color.png": "/eras-tour-surprise-songs/static/media/color.6441e63a57ccc5105bad.png",
     "index.html": "/eras-tour-surprise-songs/index.html",
     "main.03d17352.css.map": "/eras-tour-surprise-songs/static/css/main.03d17352.css.map",
-    "main.fee2badd.js.map": "/eras-tour-surprise-songs/static/js/main.fee2badd.js.map",
+    "main.1690e78f.js.map": "/eras-tour-surprise-songs/static/js/main.1690e78f.js.map",
     "787.092a5854.chunk.js.map": "/eras-tour-surprise-songs/static/js/787.092a5854.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.03d17352.css",
-    "static/js/main.fee2badd.js"
+    "static/js/main.1690e78f.js"
   ]
 }
