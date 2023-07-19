@@ -8,8 +8,8 @@ const debut: Track[] = [{
   },
   {
     title: 'Picture To Burn',
-    venue: '?',
-    isPlayed: false
+    venue: 'CO-1',
+    isPlayed: true
   },
   {
     title: 'Teardrops On My Guitar',
@@ -212,8 +212,8 @@ const speakNow: Track[] = [{
   },
   {
     title: 'Back to December',
-    venue: '?',
-    isPlayed: false
+    venue: 'CO-2',
+    isPlayed: true
   },
   {
     title: 'Speak Now',
@@ -312,8 +312,8 @@ const speakNow: Track[] = [{
   },
   {
     title: 'Timeless',
-    venue: '?',
-    isPlayed: false
+    venue: 'CO-1',
+    isPlayed: true
   },
 ]
 
@@ -389,8 +389,8 @@ const red: Track[] = [{
   },
   {
     title: 'Starlight',
-    venue: '?',
-    isPlayed: false
+    venue: 'CO-2',
+    isPlayed: true
   },
   {
     title: 'Begin Again',
@@ -1009,13 +1009,13 @@ const misc: Track[] = [{
 
 export const surpriseSongs: Track[] = [
   {
-    title: 'Last Kiss',
-    venue: 'MO-2',
+    title: 'Starlight',
+    venue: 'CO-2',
     isPlayed: true
   },
   {
-    title: 'dorothea',
-    venue: 'MO-2',
+    title: 'Back to December',
+    venue: 'CO-2',
     isPlayed: true
   }
 ] 
