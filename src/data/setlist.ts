@@ -33,8 +33,8 @@ const debut: Track[] = [{
   },
   {
     title: 'Tied Together with a Smile',
-    venue: '?',
-    isPlayed: false
+    venue: 'WA-2',
+    isPlayed: true
   },
   {
     title: 'Stay Beautiful',
@@ -53,7 +53,7 @@ const debut: Track[] = [{
   },
   {
     title: 'Our Song',
-    venue: 'NV-1',
+    venue: 'LA-2',
     isPlayed: true
   },
   {
@@ -297,13 +297,13 @@ const speakNow: Track[] = [{
   },
   {
     title: 'I Can See You',
-    venue: '?',
-    isPlayed: false
+    venue: 'LA-1',
+    isPlayed: true
   },
   {
     title: 'Castles Crumbling',
-    venue: '?',
-    isPlayed: false
+    venue: 'SC-1',
+    isPlayed: true
   },
   {
     title: 'Foolish One',
@@ -359,8 +359,8 @@ const red: Track[] = [{
   },
   {
     title: 'Stay Stay Stay',
-    venue: '?',
-    isPlayed: false
+    venue: 'SC-2',
+    isPlayed: true
   },
   {
     title: 'The Last Time',
@@ -384,8 +384,8 @@ const red: Track[] = [{
   },
   {
     title: 'Everything Has Changed',
-    venue: '?',
-    isPlayed: false
+    venue: 'WA-1',
+    isPlayed: true
   },
   {
     title: 'Starlight',
@@ -434,8 +434,8 @@ const red: Track[] = [{
   },
   {
     title: 'Message In a Bottle',
-    venue: '?',
-    isPlayed: false
+    venue: 'WA-2',
+    isPlayed: true
   },
   {
     title: 'I Bet You Think About Me',
@@ -516,8 +516,8 @@ const nine: Track[] = [{
   },
   {
     title: 'I Know Places',
-    venue: '',
-    isPlayed: false
+    venue: 'LA-5',
+    isPlayed: true
   },
   {
     title: 'Clean',
@@ -531,13 +531,13 @@ const nine: Track[] = [{
   },
   {
     title: 'You Are in Love',
-    venue: '',
-    isPlayed: false
+    venue: 'LA-2',
+    isPlayed: true
   },
   {
     title: 'New Romantics',
-    venue: '',
-    isPlayed: false
+    venue: 'LA-6',
+    isPlayed: true
   },
 ]
 
@@ -588,8 +588,8 @@ const reputation: Track[] = [{
   },
   {
     title: 'King of My Heart',
-    venue: '',
-    isPlayed: false
+    venue: 'LA-5',
+    isPlayed: true
   },
   {
     title: 'Dancing with Our Hands Tied',
@@ -598,13 +598,13 @@ const reputation: Track[] = [{
   },
   {
     title: 'Dress',
-    venue: '',
-    isPlayed: false
+    venue: 'LA-4',
+    isPlayed: true
   },
   {
     title: 'This Is Why We Can\'t Have Nice Things',
-    venue: '',
-    isPlayed: false
+    venue: 'WA-1',
+    isPlayed: true
   },
   {
     title: 'Call It What You Want',
@@ -613,8 +613,8 @@ const reputation: Track[] = [{
   },
   {
     title: 'New Years Day',
-    venue: '',
-    isPlayed: false
+    venue: 'LA-6',
+    isPlayed: true
   },
 ]
 
@@ -665,7 +665,7 @@ const lover: Track[] = [{
   },
   {
     title: 'Death by a Thousand Cuts',
-    venue: 'TX-2',
+    venue: 'LA-3',
     isPlayed: true
   },
   {
@@ -708,6 +708,11 @@ const lover: Track[] = [{
     venue: 'MN-2',
     isPlayed: true
   },
+  {
+    title: 'All Of The Girls You Loved Before',
+    venue: 'SC-2',
+    isPlayed: true
+  },
 ]
 
 const folklore: Track[] = [{
@@ -727,8 +732,8 @@ const folklore: Track[] = [{
   },
   {
     title: 'exile',
-    venue: '',
-    isPlayed: false
+    venue: 'LA-4',
+    isPlayed: true
   },
   {
     title: 'my tears ricochet',
@@ -874,8 +879,8 @@ const evermore: Track[] = [{
   },
   {
     title: 'right where you left me',
-    venue: '',
-    isPlayed: false
+    venue: 'SC-1',
+    isPlayed: true
   },
   {
     title: 'it\'s time to go',
@@ -891,7 +896,7 @@ const midnights: Track[] = [{
   },
   {
     title: 'Maroon',
-    venue: 'NJ-1',
+    venue: 'LA-1',
     isPlayed: true
   },
   {
@@ -906,7 +911,7 @@ const midnights: Track[] = [{
   },
   {
     title: 'You\'re On Your Own, Kid',
-    venue: 'FL-2',
+    venue: 'LA-3',
     isPlayed: true
   },
   {
@@ -1009,13 +1014,13 @@ const misc: Track[] = [{
 
 export const surpriseSongs: Track[] = [
   {
-    title: 'Starlight',
-    venue: 'CO-2',
+    title: 'New Romantics',
+    venue: 'LA-6',
     isPlayed: true
   },
   {
-    title: 'Back to December',
-    venue: 'CO-2',
+    title: 'New Years Day',
+    venue: 'LA-6',
     isPlayed: true
   }
 ] 
