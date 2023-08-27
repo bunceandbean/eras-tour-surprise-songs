@@ -110,8 +110,8 @@ const fearless: Track[] = [{
   },
   {
     title: 'Tell Me Why',
-    venue: '?',
-    isPlayed: false
+    venue: 'MX-2',
+    isPlayed: true
   },
   {
     title: 'You\'re Not Sorry',
@@ -620,8 +620,8 @@ const reputation: Track[] = [{
 
 const lover: Track[] = [{
     title: 'I Forgot That You Existed',
-    venue: '',
-    isPlayed: false
+    venue: 'MX-1',
+    isPlayed: true
   },
   {
     title: 'Cruel Summer',
@@ -660,8 +660,8 @@ const lover: Track[] = [{
   },
   {
     title: 'Cornelia Street',
-    venue: '',
-    isPlayed: false
+    venue: 'MX-3',
+    isPlayed: true
   },
   {
     title: 'Death by a Thousand Cuts',
@@ -906,12 +906,12 @@ const midnights: Track[] = [{
   },
   {
     title: 'Snow on the Beach',
-    venue: 'NV-1',
+    venue: 'MX-2',
     isPlayed: true
   },
   {
     title: 'You\'re On Your Own, Kid',
-    venue: 'LA-3',
+    venue: 'MX-3',
     isPlayed: true
   },
   {
@@ -946,8 +946,8 @@ const midnights: Track[] = [{
   },
   {
     title: 'Sweet Nothing',
-    venue: '',
-    isPlayed: false
+    venue: 'MX-1',
+    isPlayed: true
   },
   {
     title: 'Mastermind',
@@ -1014,13 +1014,13 @@ const misc: Track[] = [{
 
 export const surpriseSongs: Track[] = [
   {
-    title: 'New Romantics',
-    venue: 'LA-6',
+    title: 'Cornelia Street',
+    venue: 'MX-3',
     isPlayed: true
   },
   {
-    title: 'New Years Day',
-    venue: 'LA-6',
+    title: 'You\'re On Your Own, Kid',
+    venue: 'MX-3',
     isPlayed: true
   }
 ] 
