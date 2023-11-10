@@ -454,8 +454,8 @@ const red: Track[] = [{
   },
   {
     title: 'The Very First Night',
-    venue: '?',
-    isPlayed: false
+    venue: 'ARG-1',
+    isPlayed: true
   },
 ]
 
@@ -936,8 +936,8 @@ const midnights: Track[] = [{
   },
   {
     title: 'Labyrinth',
-    venue: '',
-    isPlayed: false
+    venue: 'ARG-1',
+    isPlayed: true
   },
   {
     title: 'Karma',
@@ -1014,13 +1014,13 @@ const misc: Track[] = [{
 
 export const surpriseSongs: Track[] = [
   {
-    title: 'Afterglow',
-    venue: 'MX-4',
+    title: 'The Very First Night',
+    venue: 'ARG-1',
     isPlayed: true
   },
   {
-    title: 'Maroon',
-    venue: 'MX-4',
+    title: 'Labyrinth',
+    venue: 'ARG-1',
     isPlayed: true
   }
 ] 
