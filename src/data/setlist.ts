@@ -539,6 +539,36 @@ const nine: Track[] = [{
     venue: 'LA-6',
     isPlayed: true
   },
+  {
+    title: 'Slut!',
+    venue: '',
+    isPlayed: false
+  },
+  {
+    title: 'Say Don\'t Go',
+    venue: '',
+    isPlayed: false
+  },
+  {
+    title: 'Now That We Don\'t Talk',
+    venue: '',
+    isPlayed: false
+  },
+  {
+    title: 'Suburban Legends',
+    venue: '',
+    isPlayed: false
+  },
+  {
+    title: 'Is It Over Now?',
+    venue: 'ARG-2',
+    isPlayed: true
+  },
+  {
+    title: 'Sweeter than Fiction',
+    venue: '',
+    isPlayed: false
+  }
 ]
 
 const reputation: Track[] = [{
@@ -548,8 +578,8 @@ const reputation: Track[] = [{
   },
   {
     title: 'End Game',
-    venue: '',
-    isPlayed: false
+    venue: 'ARG-2',
+    isPlayed: true
   },
   {
     title: 'I Did Something Bad',
@@ -1014,13 +1044,13 @@ const misc: Track[] = [{
 
 export const surpriseSongs: Track[] = [
   {
-    title: 'The Very First Night',
-    venue: 'ARG-1',
+    title: 'Is It Over Now?',
+    venue: 'ARG-2',
     isPlayed: true
   },
   {
-    title: 'Labyrinth',
-    venue: 'ARG-1',
+    title: 'End Game',
+    venue: 'ARG-2',
     isPlayed: true
   }
 ] 
