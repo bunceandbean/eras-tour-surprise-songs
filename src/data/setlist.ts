@@ -1037,8 +1037,8 @@ const misc: Track[] = [{
   isPlayed: true
 },
 {
-  title: 'So It Goes...',
-  venue: 'RIO-3',
+  title: 'I miss you, I’m sorry (w/ Gracie Abrams)',
+  venue: 'OH-2',
   isPlayed: true
 }]
 
@@ -1049,8 +1049,8 @@ export const surpriseSongs: Track[] = [
     isPlayed: true
   },
   {
-    title: 'End Game',
-    venue: 'ARG-2',
+    title: 'So It Goes...',
+    venue: 'RIO-3',
     isPlayed: true
   }
 ] 
