@@ -38,8 +38,8 @@ const debut: Track[] = [{
   },
   {
     title: 'Stay Beautiful',
-    venue: '?',
-    isPlayed: false
+    venue: 'RIO-1',
+    isPlayed: true
   },
   {
     title: 'Should\'ve Said No',
@@ -556,8 +556,8 @@ const nine: Track[] = [{
   },
   {
     title: 'Suburban Legends',
-    venue: '',
-    isPlayed: false
+    venue: 'RIO-1',
+    isPlayed: true
   },
   {
     title: 'Is It Over Now?',
@@ -603,8 +603,8 @@ const reputation: Track[] = [{
   },
   {
     title: 'So It Goes...',
-    venue: '',
-    isPlayed: false
+    venue: 'RIO-3',
+    isPlayed: true
   },
   {
     title: 'Gorgeous',
@@ -623,8 +623,8 @@ const reputation: Track[] = [{
   },
   {
     title: 'Dancing with Our Hands Tied',
-    venue: '',
-    isPlayed: false
+    venue: 'RIO-2',
+    isPlayed: true
   },
   {
     title: 'Dress',
@@ -725,8 +725,8 @@ const lover: Track[] = [{
   },
   {
     title: 'Me!',
-    venue: '',
-    isPlayed: false
+    venue: 'RIO-3',
+    isPlayed: true
   },
   {
     title: 'It\'s Nice to Have a Friend',
@@ -991,8 +991,8 @@ const midnights: Track[] = [{
   },
   {
     title: 'Bigger Than the Whole Sky',
-    venue: '',
-    isPlayed: false
+    venue: 'RIO-2',
+    isPlayed: true
   },
   {
     title: 'Paris',
@@ -1037,15 +1037,15 @@ const misc: Track[] = [{
   isPlayed: true
 },
 {
-  title: 'I miss you, I’m sorry (w/ Gracie Abrams)',
-  venue: 'OH-2',
+  title: 'So It Goes...',
+  venue: 'RIO-3',
   isPlayed: true
 }]
 
 export const surpriseSongs: Track[] = [
   {
-    title: 'Is It Over Now?',
-    venue: 'ARG-2',
+    title: 'Me!',
+    venue: 'RIO-3',
     isPlayed: true
   },
   {
