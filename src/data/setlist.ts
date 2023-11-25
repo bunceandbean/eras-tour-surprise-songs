@@ -252,8 +252,8 @@ const speakNow: Track[] = [{
   },
   {
     title: 'Innocent',
-    venue: '?',
-    isPlayed: false
+    venue: 'SAO-1',
+    isPlayed: true
   },
   {
     title: 'Haunted',
@@ -551,8 +551,8 @@ const nine: Track[] = [{
   },
   {
     title: 'Now That We Don\'t Talk',
-    venue: '',
-    isPlayed: false
+    venue: 'SAO-1',
+    isPlayed: true
   },
   {
     title: 'Suburban Legends',
@@ -1044,13 +1044,13 @@ const misc: Track[] = [{
 
 export const surpriseSongs: Track[] = [
   {
-    title: 'Me!',
-    venue: 'RIO-3',
+    title: 'Now That We Don\'t Talk',
+    venue: 'SAO-1',
     isPlayed: true
   },
   {
-    title: 'So It Goes...',
-    venue: 'RIO-3',
+    title: 'Innocent',
+    venue: 'SAO-1',
     isPlayed: true
   }
 ] 
