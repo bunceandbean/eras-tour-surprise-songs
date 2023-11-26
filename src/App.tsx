@@ -6,30 +6,13 @@ import 'primeicons/primeicons.css';                                 // icons
 import 'primeflex/primeflex.css';                                   // css utility
 import { Card } from 'primereact/card';
 import { TrackFrame } from './components/TrackFrame';
-import { Albums, setlist, surpriseSongs } from './data/setlist';
-import { Chart } from 'primereact/chart';
+import { Albums, colorData, setlist, surpriseSongs } from './data/setlist';
 import React, { useState, useEffect } from 'react';
 import { SetlistData } from './types/Setlist';
 import { albumSort } from './util/albumSort';
+import { SETLIST } from "./types/Track";
 
 function App() {
-
-  // Color data for each era
-
-  const colorData = {
-    "debut": "#adffc2",
-    "fearless": "#fff3ad",
-    "speakNow": "plum",
-    "red": "#FF6666",
-    "1989": "lightblue",
-    "reputation": "#818589",
-    "lover": "lightpink", 
-    "folklore": "#D3D3D3",
-    "evermore": "#C4A484",
-    "midnights": "#acace6",
-    "misc": "#013220"
-  }
-
   // Chart data
 
   // const genRelativeData = () => {
@@ -84,6 +67,31 @@ function App() {
       setChartData(data);
       setChartOptions(options);
   }, []);
+
+    const genColumn = (columnNum: number) => {
+        return albumSort(albumsToShow)
+            .filter(album => album[1].columnNumber === columnNum)
+            .map((album) => (
+                <React.Fragment key={album[1].albumName}>
+                    <Card style={{ backgroundColor: album[1].colorData }}>
+                        <h1 style={{ textAlign: 'center', ...album[1].headerCssStyle }}>{album[1].albumName}</h1>
+                        <DataView className={album[1].dataViewClassName} value={album[1].setList.filter(song => {
+                            if (hideSetlistSongs && song.venue === SETLIST) {
+                                return false;
+                            }
+                            if (hidePlayedSurprisedSongs && song.isPlayed) {
+                                return false;
+                            }
+                            if (hideUnplayedSurprisedSongs && !song.isPlayed && song.venue !== SETLIST) {
+                                return false;
+                            }
+                            return true;
+                        })} itemTemplate={TrackFrame} />
+                    </Card>
+                    <br />
+                </React.Fragment>
+            ));
+    };
 
   const filterAlbums = (albums: string[]) => {
     if (albums.length === 0) {
@@ -160,54 +168,10 @@ function App() {
     <br />
     <div className="grid">
       <div className="col-12 md:col-6 fadeinleft animation-duration-500 animation-iteration">
-        {albumSort(albumsToShow).filter(album => album[1].columnNumber === 1).map((album) => {
-          return (
-            <>
-              <Card style={{backgroundColor: album[1].colorData}}>
-                <h1 style={album[1].headerCssStyle}>{album[1].albumName}</h1>
-                  <DataView className={album[1].dataViewClassName} value={album[1].setList.filter(song => {
-                    if (hideSetlistSongs && song.venue === "SETLIST") {
-                      return false;
-                    }
-                    if (hidePlayedSurprisedSongs && song.isPlayed) {
-                      return false;
-                    }
-                    if (hideUnplayedSurprisedSongs && !song.isPlayed && song.venue !== "SETLIST") {
-                      return false;
-                    }
-                    return true;
-                  })} itemTemplate={TrackFrame} />
-              </Card>
-              <br />
-            </>
-          )
-        })}
-        </div>
-
-        <div className="col-12 md:col-6 fadeinright animation-duration-500 animation-iteration">
-        {albumSort(albumsToShow).filter(album => album[1].columnNumber === 2).map((album) => {
-          // modify album.setList to remove songs based on states
-          return (
-            <>
-              <Card style={{backgroundColor: album[1].colorData}}>
-                <h1 style={album[1].headerCssStyle}>{album[1].albumName}</h1>
-                  <DataView className={album[1].dataViewClassName} value={album[1].setList.filter(song => {
-                    if (hideSetlistSongs && song.venue === "SETLIST") {
-                      return false;
-                    }
-                    if (hidePlayedSurprisedSongs && song.isPlayed) {
-                      return false;
-                    }
-                    if (hideUnplayedSurprisedSongs && !song.isPlayed && song.venue !== "SETLIST") {
-                      return false;
-                    }
-                    return true;
-                  })} itemTemplate={TrackFrame} />
-              </Card>
-              <br />
-            </>
-          )
-        })}
+        {genColumn(1)}
+      </div>
+      <div className="col-12 md:col-6 fadeinright animation-duration-500 animation-iteration">
+        {genColumn(2)}
         {/* Nuking the analytics card for now because it was causing a design headache with the rendering columns */}
         </div>
       

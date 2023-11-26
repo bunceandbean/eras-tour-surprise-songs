@@ -1,5 +1,34 @@
-import { Track } from '../types/Track'
+import { SETLIST, Track } from '../types/Track'
 import { SetlistData } from '../types/Setlist'
+
+export enum Albums {
+  DEBUT = 'debut',
+  FEARLESS = 'fearless',
+  SPEAK_NOW = 'speakNow',
+  RED = 'red',
+  NINETEEN_EIGHT_NINE = '1989',
+  REPUTATION = 'reputation',
+  LOVER = 'lover',
+  FOLKLORE = 'folklore',
+  EVERMORE = 'evermore',
+  MIDNIGHTS = 'midnights',
+  MISC = 'misc'
+}
+
+// Color data for each era
+export const colorData = {
+  [Albums.DEBUT]: "#adffc2",
+  [Albums.FEARLESS]: "#fff3ad",
+  [Albums.SPEAK_NOW]: "plum",
+  [Albums.RED]: "#FF6666",
+  [Albums.NINETEEN_EIGHT_NINE]: "lightblue",
+  [Albums.REPUTATION]: "#818589",
+  [Albums.LOVER]: "lightpink",
+  [Albums.FOLKLORE]: "#D3D3D3",
+  [Albums.EVERMORE]: "#C4A484",
+  [Albums.MIDNIGHTS]: "#acace6",
+  [Albums.MISC]: "#F2D2BD"
+}
 
 const debut: Track[] = [{
     title: 'Tim McGraw',
@@ -75,7 +104,7 @@ const debut: Track[] = [{
 
 const fearless: Track[] = [{
     title: 'Fearless',
-    venue: 'SETLIST',
+    venue: SETLIST,
     isPlayed: true
   },
   {
@@ -85,7 +114,7 @@ const fearless: Track[] = [{
   },
   {
     title: 'Love Story',
-    venue: 'SETLIST',
+    venue: SETLIST,
     isPlayed: true
   },
   {
@@ -100,7 +129,7 @@ const fearless: Track[] = [{
   },
   {
     title: 'You Belong With Me',
-    venue: 'SETLIST',
+    venue: SETLIST,
     isPlayed: true
   },
   {
@@ -242,7 +271,7 @@ const speakNow: Track[] = [{
   },
   {
     title: 'Enchanted',
-    venue: 'SETLIST',
+    venue: SETLIST,
     isPlayed: true
   },
   {
@@ -267,7 +296,7 @@ const speakNow: Track[] = [{
   },
   {
     title: 'Long Live',
-    venue: 'SETLIST',
+    venue: SETLIST,
     isPlayed: true
   },
   {
@@ -334,17 +363,17 @@ const red: Track[] = [{
   },
   {
     title: 'I Knew You Were Trouble',
-    venue: 'SETLIST',
+    venue: SETLIST,
     isPlayed: true
   },
   {
     title: 'All Too Well',
-    venue: 'SETLIST',
+    venue: SETLIST,
     isPlayed: true
   },
   {
     title: '22',
-    venue: 'SETLIST',
+    venue: SETLIST,
     isPlayed: true
   },
   {
@@ -354,7 +383,7 @@ const red: Track[] = [{
   },
   {
     title: 'We Are Never Ever Getting Back Together',
-    venue: 'SETLIST',
+    venue: SETLIST,
     isPlayed: true
   },
   {
@@ -424,7 +453,7 @@ const red: Track[] = [{
   },
   {
     title: 'Nothing New',
-    venue: 'SETLIST',
+    venue: SETLIST,
     isPlayed: true
   },
   {
@@ -466,12 +495,12 @@ const nine: Track[] = [{
   },
   {
     title: 'Blank Space',
-    venue: 'SETLIST',
+    venue: SETLIST,
     isPlayed: true
   },
   {
     title: 'Style',
-    venue: 'SETLIST',
+    venue: SETLIST,
     isPlayed: true
   },
   {
@@ -486,7 +515,7 @@ const nine: Track[] = [{
   },
   {
     title: 'Shake It Off',
-    venue: 'SETLIST',
+    venue: SETLIST,
     isPlayed: true
   },
   {
@@ -496,12 +525,12 @@ const nine: Track[] = [{
   },
   {
     title: 'Bad Blood',
-    venue: 'SETLIST',
+    venue: SETLIST,
     isPlayed: true
   },
   {
     title: 'Wildest Dreams',
-    venue: 'SETLIST',
+    venue: SETLIST,
     isPlayed: true
   },
   {
@@ -573,7 +602,7 @@ const nine: Track[] = [{
 
 const reputation: Track[] = [{
     title: '...Ready for It?',
-    venue: 'SETLIST',
+    venue: SETLIST,
     isPlayed: true
   },
   {
@@ -588,17 +617,17 @@ const reputation: Track[] = [{
   },
   {
     title: 'Don\'t Blame Me',
-    venue: 'SETLIST',
+    venue: SETLIST,
     isPlayed: true
   },
   {
     title: 'Delicate',
-    venue: 'SETLIST',
+    venue: SETLIST,
     isPlayed: true
   },
   {
     title: 'Look What You Made Me Do',
-    venue: 'SETLIST',
+    venue: SETLIST,
     isPlayed: true
   },
   {
@@ -655,22 +684,22 @@ const lover: Track[] = [{
   },
   {
     title: 'Cruel Summer',
-    venue: 'SETLIST',
+    venue: SETLIST,
     isPlayed: true
   },
   {
     title: 'Lover',
-    venue: 'SETLIST',
+    venue: SETLIST,
     isPlayed: true
   },
   {
     title: 'The Man',
-    venue: 'SETLIST',
+    venue: SETLIST,
     isPlayed: true
   },
   {
     title: 'The Archer',
-    venue: 'SETLIST',
+    venue: SETLIST,
     isPlayed: true
   },
   {
@@ -680,7 +709,7 @@ const lover: Track[] = [{
   },
   {
     title: 'Miss Americana & the Heartbreak Prince',
-    venue: 'SETLIST',
+    venue: SETLIST,
     isPlayed: true
   },
   {
@@ -715,7 +744,7 @@ const lover: Track[] = [{
   },
   {
     title: 'You Need to Calm Down',
-    venue: 'SETLIST',
+    venue: SETLIST,
     isPlayed: true
   },
   {
@@ -747,17 +776,17 @@ const lover: Track[] = [{
 
 const folklore: Track[] = [{
     title: 'the 1',
-    venue: 'SETLIST',
+    venue: SETLIST,
     isPlayed: true
   },
   {
     title: 'cardigan',
-    venue: 'SETLIST',
+    venue: SETLIST,
     isPlayed: true
   },
   {
     title: 'the last great american dynasty',
-    venue: 'SETLIST',
+    venue: SETLIST,
     isPlayed: true
   },
   {
@@ -767,7 +796,7 @@ const folklore: Track[] = [{
   },
   {
     title: 'my tears ricochet',
-    venue: 'SETLIST',
+    venue: SETLIST,
     isPlayed: true
   },
   {
@@ -777,12 +806,12 @@ const folklore: Track[] = [{
   },
   {
     title: 'seven',
-    venue: 'SETLIST',
+    venue: SETLIST,
     isPlayed: true
   },
   {
     title: 'august',
-    venue: 'SETLIST',
+    venue: SETLIST,
     isPlayed: true
   },
   {
@@ -792,12 +821,12 @@ const folklore: Track[] = [{
   },
   {
     title: 'illicit affairs',
-    venue: 'SETLIST',
+    venue: SETLIST,
     isPlayed: true
   },
   {
     title: 'invisible string',
-    venue: 'SETLIST',
+    venue: SETLIST,
     isPlayed: true
   },
   {
@@ -812,7 +841,7 @@ const folklore: Track[] = [{
   },
   {
     title: 'betty',
-    venue: 'SETLIST',
+    venue: SETLIST,
     isPlayed: true
   },
   {
@@ -834,12 +863,12 @@ const folklore: Track[] = [{
 
 const evermore: Track[] = [{
     title: 'willow',
-    venue: 'SETLIST',
+    venue: SETLIST,
     isPlayed: true
   },
   {
     title: 'champagne problems',
-    venue: 'SETLIST',
+    venue: SETLIST,
     isPlayed: true
   },
   {
@@ -849,12 +878,12 @@ const evermore: Track[] = [{
   },
   {
     title: '\'tis the damn season',
-    venue: 'SETLIST',
+    venue: SETLIST,
     isPlayed: true
   },
   {
     title: 'tolerate it',
-    venue: 'SETLIST',
+    venue: SETLIST,
     isPlayed: true
   },
   {
@@ -894,7 +923,7 @@ const evermore: Track[] = [{
   },
   {
     title: 'marjorie',
-    venue: 'SETLIST',
+    venue: SETLIST,
     isPlayed: true
   },
   {
@@ -921,7 +950,7 @@ const evermore: Track[] = [{
 
 const midnights: Track[] = [{
     title: 'Lavender Haze',
-    venue: 'SETLIST',
+    venue: SETLIST,
     isPlayed: true
   },
   {
@@ -931,7 +960,7 @@ const midnights: Track[] = [{
   },
   {
     title: 'Anti-Hero',
-    venue: 'SETLIST',
+    venue: SETLIST,
     isPlayed: true
   },
   {
@@ -946,7 +975,7 @@ const midnights: Track[] = [{
   },
   {
     title: 'Midnight Rain',
-    venue: 'SETLIST',
+    venue: SETLIST,
     isPlayed: true
   },
   {
@@ -956,12 +985,12 @@ const midnights: Track[] = [{
   },
   {
     title: 'Vigilante Shit',
-    venue: 'SETLIST',
+    venue: SETLIST,
     isPlayed: true
   },
   {
     title: 'Bejeweled',
-    venue: 'SETLIST',
+    venue: SETLIST,
     isPlayed: true
   },
   {
@@ -971,7 +1000,7 @@ const midnights: Track[] = [{
   },
   {
     title: 'Karma',
-    venue: 'SETLIST',
+    venue: SETLIST,
     isPlayed: true
   },
   {
@@ -981,7 +1010,7 @@ const midnights: Track[] = [{
   },
   {
     title: 'Mastermind',
-    venue: 'SETLIST',
+    venue: SETLIST,
     isPlayed: true
   },
   {
@@ -1055,142 +1084,118 @@ export const surpriseSongs: Track[] = [
   }
 ] 
 
-export enum Albums {
-  DEBUT = 'debut',
-  FEARLESS = 'fearless',
-  SPEAK_NOW = 'speakNow',
-  RED = 'red',
-  NINETEEN_EIGHT_NINE = '1989',
-  REPUTATION = 'reputation',
-  LOVER = 'lover',
-  FOLKLORE = 'folklore',
-  EVERMORE = 'evermore',
-  MIDNIGHTS = 'midnights',
-  MISC = 'misc'
-}
 
 export const setlist: {[key in Albums]: SetlistData}= {
-  "debut": {
+  [Albums.DEBUT]: {
     albumName: 'Taylor Swift',
     columnNumber: 1,
     albumNumber: 1,
     setList: debut,
-    colorData: "#adffc2",
+    colorData: colorData.debut,
     headerCssStyle: {
       fontFamily: 'Debut',
-      textAlign: "center",
     },
   },
-  "fearless": {
+  [Albums.FEARLESS]: {
     albumName: 'Fearless',
     columnNumber: 2,
     albumNumber: 2,
     setList: fearless,
-    colorData: '#fff3ad',
+    colorData: colorData.fearless,
     headerCssStyle: {
       fontFamily: 'Fearless',
-      textAlign: "center",
     },
   },
-  "speakNow": {
+  [Albums.SPEAK_NOW]: {
     albumName: 'Speak Now',
     columnNumber: 1,
     albumNumber: 3,
     setList: speakNow,
-    colorData: 'plum',
+    colorData: colorData.speakNow,
     headerCssStyle: {
       fontFamily: 'Speak-Now',
-      textAlign: "center",
     },
   },
-  "red": {
+  [Albums.RED]: {
     albumName: 'Red',
     columnNumber: 2,
     albumNumber: 4,
     setList: red,
-    colorData: '#FF6666',
+    colorData: colorData.red,
     headerCssStyle: {
       fontFamily: 'Impact, fantasy',
-      textAlign: "center",
     },
   },
-  "1989": {
+  [Albums.NINETEEN_EIGHT_NINE]: {
     albumName: '1989',
     columnNumber: 1,
     albumNumber: 5,
     setList: nine,
-    colorData: 'lightblue',
+    colorData: colorData[Albums.NINETEEN_EIGHT_NINE],
     headerCssStyle: {
       fontFamily: 'nine',
-      textAlign: "center",
     },
   },
-  "reputation": {
+  [Albums.REPUTATION]: {
     albumName: 'reputation',
     columnNumber: 2,
     albumNumber: 6,
     setList: reputation,
-    colorData: '#818589',
+    colorData: colorData.reputation,
     headerCssStyle: {
       fontFamily: 'reputation',
       color: "black",
-      textAlign: "center",
     },
   },
-  "lover": {
+  [Albums.LOVER]: {
     albumName: 'Lover',
     columnNumber: 1,
     albumNumber: 7,
     setList: lover,
-    colorData: 'lightpink',
+    colorData: colorData.lover,
     headerCssStyle: {
       fontFamily: 'Lover',
-      textAlign: "center",
     },
-  }, 
-  "folklore": {
+  },
+  [Albums.FOLKLORE]: {
     albumName: 'folklore',
     columnNumber: 2,
     albumNumber: 8,
     setList: folklore,
-    colorData: '#D3D3D3',
+    colorData: colorData.folklore,
     headerCssStyle: {
       fontFamily: 'folklore',
-      textAlign: "center",
     },
   },
-  "evermore": {
+  [Albums.EVERMORE]: {
     albumName: 'evermore',
     columnNumber: 1,
     albumNumber: 9,
     setList: evermore,
-    colorData: '#C4A484',
+    colorData: colorData.evermore,
     headerCssStyle: {
       fontFamily: 'folklore',
-      textAlign: "center",
     },
   },
-  "midnights": {
+  [Albums.MIDNIGHTS]: {
     albumName: 'Midnights',
     columnNumber: 1,
     albumNumber: 10,
     setList: midnights,
-    colorData: '#acace6',
+    colorData: colorData.midnights,
     headerCssStyle: {
       fontFamily: 'Neue Haas Grotesk Display Pro',
-      textAlign: "center",
     },
     dataViewClassName: 'bg-purple-600',
   },
-  "misc": {
+  [Albums.MISC]: {
     albumName: 'Miscellaneous',
     columnNumber: 2,
     albumNumber: 11,
     setList: misc,
-    colorData: '#F2D2BD',
+    colorData: colorData.misc,
     headerCssStyle: {
       fontFamily: 'Neue Haas Grotesk Display Pro',
-      textAlign: "center",
     },
   },
 }
