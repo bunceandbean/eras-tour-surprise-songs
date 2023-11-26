@@ -174,8 +174,8 @@ const fearless: Track[] = [{
   },
   {
     title: 'Untouchable',
-    venue: '?',
-    isPlayed: false
+    venue: 'SAO-2',
+    isPlayed: true
   },
   {
     title: 'Come In with the Rain',
@@ -1069,17 +1069,22 @@ const misc: Track[] = [{
   title: 'I miss you, I’m sorry (w/ Gracie Abrams)',
   venue: 'OH-2',
   isPlayed: true
+},
+{
+  title: 'Safe and Sound',
+  venue: 'SAO-2',
+  isPlayed: true
 }]
 
 export const surpriseSongs: Track[] = [
   {
-    title: 'Now That We Don\'t Talk',
-    venue: 'SAO-1',
+    title: 'Safe and Sound',
+    venue: 'SAO-2',
     isPlayed: true
   },
   {
-    title: 'Innocent',
-    venue: 'SAO-1',
+    title: 'Untouchable',
+    venue: 'SAO-2',
     isPlayed: true
   }
 ] 
