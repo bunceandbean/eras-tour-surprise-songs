@@ -276,8 +276,8 @@ const speakNow: Track[] = [{
   },
   {
     title: 'Better than Revenge',
-    venue: '?',
-    isPlayed: false
+    venue: 'ARG-3',
+    isPlayed: true
   },
   {
     title: 'Innocent',
@@ -570,13 +570,13 @@ const nine: Track[] = [{
   },
   {
     title: 'Slut!',
-    venue: '',
-    isPlayed: false
+    venue: 'ARG-3',
+    isPlayed: true
   },
   {
     title: 'Say Don\'t Go',
-    venue: '',
-    isPlayed: false
+    venue: 'SAO-3',
+    isPlayed: true
   },
   {
     title: 'Now That We Don\'t Talk',
@@ -943,7 +943,7 @@ const evermore: Track[] = [{
   },
   {
     title: 'it\'s time to go',
-    venue: '',
+    venue: 'SAO-3',
     isPlayed: false
   },
 ]
@@ -1078,13 +1078,13 @@ const misc: Track[] = [{
 
 export const surpriseSongs: Track[] = [
   {
-    title: 'Safe and Sound',
-    venue: 'SAO-2',
+    title: 'Say Don\'t Go',
+    venue: 'SAO-3',
     isPlayed: true
   },
   {
-    title: 'Untouchable',
-    venue: 'SAO-2',
+    title: 'it\'s time to go',
+    venue: 'SAO-3',
     isPlayed: true
   }
 ] 
